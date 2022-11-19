@@ -1,4 +1,4 @@
-import {PokemonList} from "../interfaces/pokemon";
+import {Pokemon, PokemonList} from "../interfaces/pokemon";
 
 class PokemonService {
   async list(): Promise<PokemonList> {
@@ -6,9 +6,13 @@ class PokemonService {
     return await response.json()
   }
 
-  list2(): Promise<PokemonList> {
-    return fetch('https://pokeapi.co/api/v2/pokemon?limit=50')
+  get(id: string): Promise<Pokemon> {
+    return fetch(`https://pokeapi.co/api/v2/pokemon/${id}`)
       .then((response) => response.json())
+  }
+
+  timeout(time: number) {
+    return new Promise((resolve) => setTimeout(resolve, time))
   }
 }
 

@@ -1,0 +1,22 @@
+.pokemonList {
+  color: black;
+  margin: auto 400px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: white;
+    height: 200px;
+
+    img {
+      cursor: pointer;
+    }
+  }
+}

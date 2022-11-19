@@ -1,4 +1,4 @@
-import PokemonListComponent from "../../components/PokemonList";
+import PokemonListComponent from "../../components/list/PokemonList";
 import {PokemonList} from "../../interfaces/pokemon";
 import PokemonService from "../../services/PokemonService";
 import {GetServerSidePropsContext} from "next";

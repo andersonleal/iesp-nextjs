@@ -1,10 +1,10 @@
-import {PokemonListClient} from "../components/PokemonList";
+import {PokemonListClient} from "../../components/list/PokemonList";
 import Link from "next/link";
 
-export default function Home() {
+export default function ClientListPage() {
   return (
     <div>
-      <Link href={"/pokemon"}>
+      <Link href={"/ssr"}>
         Pokemon Serverside
       </Link>
       <PokemonListClient/>
