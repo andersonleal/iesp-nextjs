@@ -1,0 +1,12 @@
+.pokemonList {
+  color: black;
+  margin: auto 400px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+
+  &__card {
+    background-color: white;
+    height: 100px;
+  }
+}
